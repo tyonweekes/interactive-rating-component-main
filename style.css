@@ -1,0 +1,123 @@
+/* Variables */
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/* General */
+body {
+    background-color: var(--very-dark-blue);
+}
+
+.main-container {
+    background-color: #212832;
+    border-radius: 16px;
+    padding: 25px;
+    width: 340px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.main-container-thank-you {
+    background-color: #212832;
+    border-radius: 16px;
+    padding: 25px;
+    width: 340px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.star-icon {
+    background-color: #272e38;
+    border-radius: 30px;
+    padding: 15px;
+    width: 15px;
+}
+
+h1 {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 28px;
+}
+
+p {
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    color: var(--light-grey);
+    font-size: 15px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.rating {
+    display: inline;
+    font-family: 'Overpass', sans-serif;
+    color: var(--light-grey);
+    font-size: 15px;
+    background-color: #272e38;
+    border-radius: 30px;
+    padding: 15px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+
+.rating:hover {
+    color: var(--white);
+    background-color: var(--light-grey);
+    cursor: pointer;
+}
+
+.rating:focus {
+    color: var(--white);
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 120px;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.your-rating {
+    color: var(--orange);
+    background-color:#272e38;
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+/* Attribution */
+.attribution {
+    font-family: 'Overpass', sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: var(--light-grey);
+}
+.attribution a {
+    color: var(--orange);
+}
