@@ -19,17 +19,22 @@ body {
     padding: 25px;
     width: 340px;
     margin: auto;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 150px;
+    left: 480px;
 }
 
 .main-container-thank-you {
+    display: none;
     background-color: #212832;
     border-radius: 16px;
     padding: 25px;
     width: 340px;
     text-align: center;
     margin: auto;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 150px;
+    left: 480px;
 }
 
 .star-icon {
@@ -117,6 +122,10 @@ button:hover {
     font-size: 11px;
     text-align: center;
     color: var(--light-grey);
+    margin-top: 20px;
+    position: absolute;
+    top: 530px;
+    left: 540px;
 }
 .attribution a {
     color: var(--orange);

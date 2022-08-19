@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./scripts.js"></script>
 </head>
 <body>
 
@@ -20,13 +21,13 @@
     <p>Please let us know how we did with your support request. All feedback is appreciated 
       to help us improve our offering!</p>
     <div class="ratings">
-      <span class="rating circle-container" tabindex="0">1</span>
-      <span class="rating circle-container" tabindex="0">2</span>
-      <span class="rating circle-container" tabindex="0">3</span>
-      <span class="rating circle-container" tabindex="0">4</span>
-      <span class="rating circle-container" tabindex="0">5</span>
+      <span class="rating circle-container" tabindex="0" id="1">1</span>
+      <span class="rating circle-container" tabindex="0" id="2">2</span>
+      <span class="rating circle-container" tabindex="0" id="3">3</span>
+      <span class="rating circle-container" tabindex="0" id="4">4</span>
+      <span class="rating circle-container" tabindex="0" id="5">5</span>
     </div>
-    <button class="submit">SUBMIT</button>
+    <button onclick="submitRating()" class="submit">SUBMIT</button>
   </div>
 
   <!-- Rating state end -->
@@ -35,7 +36,7 @@
 
   <div class="main-container-thank-you">
     <img src="./images/illustration-thank-you.svg" alt="thank you illustration">
-      <p class="your-rating">You selected <!-- Add rating here --> out of 5</p>
+      <p class="your-rating">You selected <span id="selected-rating"></span> out of 5</p>
     <h1>Thank you!</h1>
     <p>We appreciate you taking the time to give a rating. If you ever need more support, 
       don’t hesitate to get in touch!</p>
